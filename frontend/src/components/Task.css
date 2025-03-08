@@ -1,0 +1,130 @@
+/* Task Container */
+.task-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task Item */
+.task-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+/* Task Content - Flexbox Layout */
+.task-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Moves checkbox to extreme right */
+  width: 100%;
+}
+
+/* Task Info (Title & Description) */
+.task-info {
+  flex-grow: 1;
+  max-width: 85%;
+}
+
+.task-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.task-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Checkbox Wrapper */
+.task-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 15%;
+}
+
+/* Checkbox Styling */
+.checkbox-input {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #4caf50; /* Green checkbox */
+  transition: 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .task-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .task-item {
+    padding: 15px;
+  }
+
+  .task-title {
+    font-size: 18px;
+  }
+
+  .task-description {
+    font-size: 14px;
+  }
+
+  .checkbox-input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .task-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .task-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .task-title {
+    font-size: 16px;
+  }
+
+  .task-description {
+    font-size: 13px;
+  }
+
+  .task-checkbox {
+    width: auto;
+  }
+
+  .checkbox-input {
+    width: 18px;
+    height: 18px;
+  }
+}

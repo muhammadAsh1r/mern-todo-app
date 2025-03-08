@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(7, 40, 125);
+}
