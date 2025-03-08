@@ -8,11 +8,14 @@ const Form = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     props.handleSubmit({ title, description, isCompleted });
     setTitle("");
     setDescription("");
     setIsCompleted(false);
   };
+
+  const isFormValid = title.length > 3 && description.length > 3 ? false : true;
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>
@@ -56,7 +59,7 @@ const Form = (props) => {
           onChange={(e) => setIsCompleted(e.target.checked)}
         />
       </div>
-      <button type="submit" className="form-button">
+      <button type="submit" className="form-button" disabled={isFormValid}>
         Submit
       </button>
     </form>

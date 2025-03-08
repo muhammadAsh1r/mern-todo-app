@@ -17,7 +17,7 @@ const DUMMY_TASK = [
     id: 2,
     title: "Gym Workout",
     description: "Physics Work!",
-    isCompleted: false,
+    isCompleted: true,
   },
   {
     id: 3,

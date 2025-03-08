@@ -128,3 +128,29 @@
     height: 18px;
   }
 }
+
+/* Filter Options */
+.task__filter-options {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.task__filter-options select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task__filter-options select:hover {
+  border-color: #4caf50;
+}
+
+.task__filter-options select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
